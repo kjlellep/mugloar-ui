@@ -61,8 +61,18 @@ The following commands are intended for a Unix-style shell environment such as W
 
 ### Prerequisites
 
-- Node.js (v18+ recommended)
-- npm
+- **Node.js v18.19.1** (required)
+- **npm v9.6+**
+- A recent version of a Unix-compatible shell (e.g., bash, zsh)
+
+> The project depends on features and plugin compatibility tied to Node 18.
+
+If you are using [`nvm`](https://github.com/nvm-sh/nvm), you can install the correct Node version with:
+
+```bash
+nvm install 18.19.1
+nvm use 18.19.1
+```
 
 ### Clone the repository
 
@@ -74,7 +84,7 @@ cd mugloar-ui
 ### Installation
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 
 ### Run the App in Development Mode
